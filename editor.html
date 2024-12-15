@@ -23,25 +23,29 @@
     </header>
     <main>
         <div class="editor-container">
-            <div class="editor-buttons-top">
-                <button class="action-btn save-btn">Save</button>
-                <button class="action-btn upload-btn">Upload</button>
-                <button class="action-btn download-btn">Download</button>
-                <button class="action-btn trash-btn">Trash</button>
+            <div class="editor-header"> <!-- New header for the grid -->
+                <h1>Meme Editor</h1>
             </div>
-            <div class="editor-content">
-                <div class="editor-buttons-left">
+            <div class="editor-grid"> <!-- Use grid for main content -->
+                <div class="editor-sidebar">
                     <button class="tool-btn text-btn">Text</button>
                     <button class="tool-btn image-btn">Image</button>
                     <button class="tool-btn pencil-btn">Pencil</button>
                     <button class="tool-btn eraser-btn">Eraser</button>
                 </div>
-                <div class="editor-image">
+                <div class="editor-main">
                     <img src="placeholder-meme.jpg" alt="Editable Meme" id="editable-image">
                 </div>
             </div>
+            <div class="editor-footer"> <!-- Footer inside the editor -->
+                <button class="action-btn save-btn">Save</button>
+                <button class="action-btn upload-btn">Upload</button>
+                <button class="action-btn download-btn">Download</button>
+                <button class="action-btn trash-btn">Trash</button>
+            </div>
         </div>
     </main>
+    
     <footer>
         <p>&copy; 2024 MyMEME | Follow us on 
             <a href="#">Instagram</a>, 

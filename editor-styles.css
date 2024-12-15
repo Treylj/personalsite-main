@@ -202,3 +202,42 @@ footer a {
 footer a:hover {
   color: var(--nav-hover-link-color);
 }
+.editor-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar + main content */
+  gap: 20px;
+}
+
+.editor-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editor-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+}
